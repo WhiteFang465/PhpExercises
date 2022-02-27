@@ -30,10 +30,16 @@ $users = array(
 );
 
 showTitle("Exercise 1 (Show first names without iteration)");
+echo implode("<br/>", array_column($users,'first_name'));
+
 
 showTitle('Exercise 2 (Show the value of the different element between the two collections $firstArray and $secondArray without iterating)');
 
 $firstArray = array('a' => 'auto', 'b' => 'moto', 'c' => 'airplane');
 $secondArray = array('a' => 'auto', 'b' => 'moto');
+$result=array_diff($firstArray,$secondArray);
+echo implode(" <br/>",$result);
 
 showTitle('Exercise 3 (Reverse the keys and values of the $firstArray array without iterating)');
+
+print_r(array_flip($secondArray));
