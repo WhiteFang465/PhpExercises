@@ -34,7 +34,7 @@ function getClassForExperience(int $experience): string
             return "experience-valid";
             break;
         case $experience < MINIMUM_EXPERIENCE:
-            return "";
+            return "experience-invalid";
             break;
         default:
             return "";
@@ -126,7 +126,7 @@ function getClassForExperience(int $experience): string
                         <?= $jobDescription . " : " . $jobExperience . " Years <br/>" ?>
 
                     </div>
-                    <br>
+
 
 
                     <?php
