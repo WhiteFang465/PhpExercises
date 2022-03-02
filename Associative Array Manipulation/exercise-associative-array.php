@@ -42,4 +42,4 @@ echo implode(" <br/>",$result);
 
 showTitle('Exercise 3 (Reverse the keys and values of the $firstArray array without iterating)');
 
-print_r(array_flip($secondArray));
+print_r(array_flip($firstArray));
